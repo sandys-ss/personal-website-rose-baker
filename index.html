@@ -4,28 +4,236 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:ital@0;1&display=swap"
+    rel="stylesheet">
   <title>Rose Bakers</title>
 </head>
 
 <body>
 
-  <div class="flex items-center justify-between px-36 py-3.5 bg-primary">
+  <!-- Navigation -->
+  <div class="flex items-center justify-between px-4 md:px-20 lg:px-36 py-3.5 bg-primary">
     <div>
       <img src="img/left-logo.png" alt="Rose Baker is best cheaf in american">
     </div>
-    <div class="flex space-x-9 font-poppins font-medium text-base">
+
+    <div class="md:hidden">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </div>
+
+    <div class="hidden md:flex space-x-9 font-poppins font-medium text-base">
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Contact</a>
     </div>
-    <div class="flex space-x-1">
+
+    <div class="hidden lg:flex space-x-1">
       <img src="img/facebook.svg" alt="Rose Baker facebook page">
       <img src="img/twitter.svg" alt="Rose Baker twitter page">
       <img src="img/instagram.svg" alt="Rose Baker instagram page">
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div class="pt-12 px-10 md:px-20 lg:px-36">
+
+    <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-5">
+
+      <div>
+        <img src="img/left-profil-picture.png" class="w-full h-full shadow-lg" alt="rose baker profil picture">
+      </div>
+
+      <div class="bg-primary px-8 py-4 lg:px-12 lg:py-6 xl:pt-16 xl:pl-24 xl:pr-20 xl:pb-24">
+        <h1 class="text-2xl xl:text-4xl font-poppins font-bold">Another taste from American</h1>
+        <p class="pt-4 text-lg xl:text-xl font-roboto font-normal">Build BekyCook restaurant in 2011,
+          Experienced with American cuisine.
+          You need special foods for a real
+          experience.</p>
+        <button class="pt-6 text-white font-medium font-poppins text-sm xl:text-2xl">
+          <a href="#" class="inline-block bg-black py-4 px-8">LET’S CHAT</a>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- About Me -->
+  <div class="mt-20 bg-primary relative">
+
+    <div class="hidden lg:inline-block absolute bg-white bottom-0 inset-x-0 w-full h-24"></div>
+
+    <div class="px-10 md:px-20 lg:px-36 pt-7">
+      <h1 class="font-poppins font-semibold text-2xl uppercase text-center">About</h1>
+
+      <div class="flex flex-col md:relative md:grid md:grid-cols-2 md:gap-20 xl:gap-32">
+
+        <div class="mt-4 lg:mt-16 mb-10 bg-white w-full shadow-lg border-gray-300 order-2 md:order-1">
+          <p class="px-14 text-left pt-10 text-sm lg:text-xl font-roboto font-normal">Rose Baker from Chicago, US.
+            Started to like cooking since childhood.
+            In 2011 when join Masterchef and
+            became a winner. She owns many
+            restaurants all over the states of America.</p>
+          <button class="px-14 pt-5 pb-5 text-white font-medium font-poppins text-sm xl:text-2xl">
+            <a href="#" class="inline-block bg-black py-4 px-8">LET’S CHAT</a>
+          </button>
+        </div>
+
+        <div class="mt-4 lg:mt-8 mb-10 lg:mb-0 order-1 md:order-2">
+          <img src="img/right-profil-photo.png" class="shadow-lg w-full h-full" alt="about profil picture rose baker">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Services -->
+  <div class="pt-20 px-8 lg:px-36">
+    <h1 class="text-center font-poppins font-semibold text-2xl">Our Services</h1>
+    <div class="pt-12 flex flex-col lg:grid lg:grid-cols-3 lg:gap-6 space-y-16 lg:space-y-0">
+
+      <div class="flex flex-col justify-between">
+        <div>
+
+          <div>
+            <img src="img/Hawaiian Haystack.png" class="shadow-lg w-full" alt="hawaii haystack">
+          </div>
+
+          <div class="pt-4">
+            <h2 class="font-poppins font-semibold text-2xl">Hawaiian Haystack</h2>
+            <p class="pt-2 font-roboto text-lg font-normal">It is a convenience cuisine dish composed of
+              a rice base and several toppings. It is
+              prepared by topping rice with toppings such
+              as chicken, chicken gravy, diced pineapple,
+              diced tomatoes, Chinese noodles, cheese,
+              and celery.</p>
+          </div>
+
+        </div>
+
+        <button class="mt-4 font-poppins font-semibold text-2xl text-center w-full bg-primary">
+          <a href="#" class="py-3 block">View Menu</a>
+        </button>
+
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+
+          <div>
+            <img src="img/Chicken Bog.png" class="shadow-lg w-full" alt="hawaii haystack">
+          </div>
+
+          <div class="pt-4">
+            <h2 class="font-poppins font-semibold text-2xl">Chicken Bog</h2>
+            <p class="pt-2 font-roboto text-lg font-normal">A pilaf dish made of rice and chicken. It can
+              include onion, spices, and sometimes
+              sausage. A whole chicken is boiled until
+              tender (with the sausage, onion, and spices,
+              if included), then the rice is added and
+              cooked until it absorbs all the liquid.</p>
+          </div>
+
+        </div>
+
+        <button class="mt-4 font-poppins font-semibold text-2xl text-center w-full bg-primary">
+          <a href="#" class="py-3 block">View Menu</a>
+        </button>
+
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+
+          <div>
+            <img src="img/Calas.png" class="shadow-lg w-full" alt="hawaii haystack">
+          </div>
+
+          <div class="pt-4">
+            <h2 class="font-poppins font-semibold text-2xl">Calas</h2>
+            <p class="pt-2 font-roboto text-lg font-normal">dumplings composed primarily of cooked
+              rice, yeast, sugar, eggs, and flour; the
+              resulting batter is deep-fried. It is traditionally
+              a breakfast dish, served with coffee and has
+              a mention in most Creole cuisine cookbooks.</p>
+          </div>
+
+        </div>
+
+        <button class="mt-4 font-poppins font-semibold text-2xl text-center w-full bg-primary">
+          <a href="#" class="py-3 block">View Menu</a>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- testimoni -->
+  <div class="py-20 px-36 text-center">
+
+    <h1 class="font-poppins font-semibold text-2xl">WHAT MY CLIENTS AREA SAYING</h1>
+
+    <div class="pt-12 font-roboto italic text-2xl px-20">
+
+      <div class="absolute justify-center transform translate-y-7 left-0 translate-x-48">
+        <img src="img/left-arrow.png" alt="geser kiri testimoni">
+      </div>
+
+      <div class="absolute justify-center transform translate-y-7 right-0 -translate-x-48">
+        <img src="img/right-arrow.png" alt="geser kanan testimoni">
+      </div>
+
+      <div class="relative">
+        <p>“You can find many restaurants that provide chicken bog.</p>
+        <p>But Rose Baker gives a different taste. This is the best chicken bog in my life “</p>
+        <p>- Walter Samuel</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- about -->
+  <div class="bg-primary w-full">
+
+    <h1 class="font-poppins text-2xl font-semibold uppercase text-center pt-8">follow me</h1>
+
+    <div class="py-14 px-36 grid grid-cols-3 gap-6 bg-primary">
+
+      <div>
+        <img src="img/fb.png" alt="fb contact">
+        <p class="pt-4 font-poppins font-semibold text-lg text-center">Facebook : Bekycook Resto</p>
+      </div>
+      <div>
+        <img src="img/twit.png" alt="twitter contact">
+        <p class="pt-4 font-poppins font-semibold text-lg text-center">Twitter : @rosebabaker</p>
+      </div>
+      <div>
+        <img src="img/ig.png" alt="instagram contact">
+        <p class="pt-4 font-poppins font-semibold text-lg text-center">Instagram : @rosebabaker</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <div class="py-5 px-36">
+    <div class="flex justify-between font-poppins font-medium text-base">
+      <div class="flex gap-12">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>Copyright @ 2020 | Sandy's</div>
     </div>
   </div>
 
