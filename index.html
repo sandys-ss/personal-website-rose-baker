@@ -19,17 +19,21 @@
       <img src="img/left-logo.png" alt="Rose Baker is best cheaf in american">
     </div>
 
+    <!-- mobile button -->
     <div class="md:hidden">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
+      <button class="btn-mobile">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
 
+    <!-- primary navbar -->
     <div class="hidden md:flex space-x-9 font-poppins font-medium text-base">
       <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </div>
 
     <div class="hidden lg:flex space-x-1">
@@ -39,8 +43,16 @@
     </div>
   </div>
 
+  <!-- mobile menu -->
+  <div class="hidden bg-primary px-4 pb-4 space-y-2 font-poppins font-medium text-base btn-menu">
+      <a href="#" class="block">Home</a>
+      <a href="#about" class="block">About</a>
+      <a href="#services" class="block">Services</a>
+      <a href="#contact" class="block">Contact</a>
+  </div>
+
   <!-- hero -->
-  <div class="pt-12 px-10 md:px-20 lg:px-36">
+  <div class="pt-12 px-10 md:px-20 lg:px-36" id="hero">
 
     <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-5">
 
@@ -64,7 +76,7 @@
   </div>
 
   <!-- About Me -->
-  <div class="mt-20 bg-primary relative">
+  <div class="mt-20 bg-primary relative" id="about">
 
     <div class="hidden lg:inline-block absolute bg-white bottom-0 inset-x-0 w-full h-24"></div>
 
@@ -94,7 +106,7 @@
   </div>
 
   <!-- Services -->
-  <div class="pt-20 px-8 lg:px-36">
+  <div class="pt-20 px-8 lg:px-36" id="services">
     <h1 class="text-center font-poppins font-semibold text-2xl">Our Services</h1>
     <div class="pt-12 flex flex-col lg:grid lg:grid-cols-3 lg:gap-6 space-y-16 lg:space-y-0">
 
@@ -202,8 +214,8 @@
 
   </div>
 
-  <!-- about -->
-  <div class="bg-primary w-full">
+  <!-- contact -->
+  <div class="bg-primary w-full" id="contact">
 
     <h1 class="font-poppins text-2xl font-semibold uppercase text-center pt-8">follow me</h1>
 
@@ -243,7 +255,16 @@
 
 
   <script type="module" src="/main.js"></script>
-  <script type="text/javascript" src="/app.js"></script>
+  <script>
+    const btn = document.querySelector("button.btn-mobile");
+    const menu = document.querySelector(".btn-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    } );
+
+    console.log("hello");
+  </script>
 </body>
 
 </html>
