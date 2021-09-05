@@ -192,22 +192,27 @@
 
     <h1 class="font-poppins font-semibold text-xl lg:text-2xl">WHAT MY CLIENTS AREA SAYING</h1>
 
-    <div class="pt-12 font-roboto italic text-lg lg:text-2xl px-20">
+    <div class="pt-12 font-roboto italic text-lg lg:text-2xl px-20 relative">
 
-      <div
-        class="absolute justify-center transform translate-y-16 md:translate-y-10 lg:translate-y-7 left-0 translate-x-16 lg:translate-x-48">
-        <img src="img/left-arrow.svg" class="h-6 w-4 lg:h-11 lg:w-6" alt="geser kiri testimoni">
-      </div>
+      <!-- Next/prev buttons -->
+      <a class="cursor-pointer absolute top-1/2 w-auto -mt-8 p-4 left-0" onclick="plusSlides(-1)"><img src="/img/left-arrow.svg"></a>
+      <a class="cursor-pointer absolute top-1/2 w-auto -mt-8 p-4 right-0" onclick="plusSlides(1)"><img src="/img/right-arrow.svg"></a>
 
-      <div
-        class="absolute justify-center transform translate-y-16 md:translate-y-10 lg:translate-y-7 right-0 -translate-x-16 lg:-translate-x-48">
-        <img src="img/right-arrow.svg" class="h-6 w-4 lg:h-11 lg:w-6" alt="geser kanan testimoni">
-      </div>
-
-      <div class="relative">
+      <div class="mySlides">
         <p>“You can find many restaurants that provide chicken bog.</p>
         <p>But Rose Baker gives a different taste. This is the best chicken bog in my life “</p>
-        <p>- Walter Samuel</p>
+        <p class="pt-2">- Walter Samuel</p>
+      </div>
+
+      <div class="mySlides">
+        <p>“Love rice bowl and chicken. Delicious and perfect taste “</p>
+        <p class="pt-2">- Sasha</p>
+      </div>
+
+      <div class="mySlides">
+        <p>“Best in town food and cake.</p>
+        <p>Rose Baker gives a special taste in every food “</p>
+        <p class="pt-2">- William Barak</p>
       </div>
 
     </div>
