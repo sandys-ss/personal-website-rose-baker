@@ -15,8 +15,24 @@
 
   <!-- Navigation -->
   <div class="flex items-center justify-between px-4 md:px-20 lg:px-36 py-3.5 bg-primary">
+    
+    <!-- logo -->
     <div>
       <img src="img/left-logo.png" alt="Rose Baker is best cheaf in american">
+    </div>
+
+    <!-- primary navbar -->
+    <div class="hidden md:flex space-x-9 font-poppins font-medium text-base">
+      <a href="#" class="hover:text-gray-600">Home</a>
+      <a href="#about" class="hover:text-gray-600">About</a>
+      <a href="#services" class="hover:text-gray-600">Services</a>
+      <a href="#contact" class="hover:text-gray-600">Contact</a>
+    </div>
+
+    <div class="hidden lg:flex space-x-1">
+      <img src="img/facebook.svg" alt="Rose Baker facebook page">
+      <img src="img/twitter.svg" alt="Rose Baker twitter page">
+      <img src="img/instagram.svg" alt="Rose Baker instagram page">
     </div>
 
     <!-- mobile button -->
@@ -28,27 +44,14 @@
       </button>
     </div>
 
-    <!-- primary navbar -->
-    <div class="hidden md:flex space-x-9 font-poppins font-medium text-base">
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-    <div class="hidden lg:flex space-x-1">
-      <img src="img/facebook.svg" alt="Rose Baker facebook page">
-      <img src="img/twitter.svg" alt="Rose Baker twitter page">
-      <img src="img/instagram.svg" alt="Rose Baker instagram page">
-    </div>
   </div>
 
   <!-- mobile menu -->
-  <div class="hidden bg-primary px-4 pb-4 space-y-2 font-poppins font-medium text-base btn-menu">
-      <a href="#" class="block">Home</a>
-      <a href="#about" class="block">About</a>
-      <a href="#services" class="block">Services</a>
-      <a href="#contact" class="block">Contact</a>
+  <div class="hidden md:hidden bg-primary px-4 pb-4 space-y-2 font-poppins font-medium text-base btn-menu">
+    <a href="#" class="block">Home</a>
+    <a href="#about" class="block">About</a>
+    <a href="#services" class="block">Services</a>
+    <a href="#contact" class="block">Contact</a>
   </div>
 
   <!-- hero -->
@@ -195,8 +198,10 @@
     <div class="pt-12 font-roboto italic text-lg lg:text-2xl px-20 relative">
 
       <!-- Next/prev buttons -->
-      <a class="cursor-pointer absolute top-1/2 w-auto -mt-8 p-4 left-0" onclick="plusSlides(-1)"><img src="/img/left-arrow.svg"></a>
-      <a class="cursor-pointer absolute top-1/2 w-auto -mt-8 p-4 right-0" onclick="plusSlides(1)"><img src="/img/right-arrow.svg"></a>
+      <a class="cursor-pointer absolute top-1/2 w-auto -mt-8 p-4 left-0" onclick="plusSlides(-1)"><img
+          src="/img/left-arrow.svg"></a>
+      <a class="cursor-pointer absolute top-1/2 w-auto -mt-8 p-4 right-0" onclick="plusSlides(1)"><img
+          src="/img/right-arrow.svg"></a>
 
       <div class="mySlides">
         <p>“You can find many restaurants that provide chicken bog.</p>

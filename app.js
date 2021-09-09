@@ -8,11 +8,6 @@ const menu = document.querySelector(".btn-menu");
       menu.classList.toggle("hidden");
     } );
 
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-            menu.classList.toggle("hidden");
-        };
-    });
 
 //Slideshow quote
 
